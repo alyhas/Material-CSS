@@ -1146,6 +1146,7 @@ M.initializeJqueryWrapper = function (plugin, pluginName, classRef) {
         instance[methodOrOptions].apply(instance, params);
       });
 
+
       // Initialize plugin if options or no argument is passed in
     } else if (typeof methodOrOptions === 'object' || !methodOrOptions) {
       plugin.init(this, arguments[0]);
@@ -12335,3 +12336,11 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   Range.init($('input[type=range]'));
 })(cash, M.anime);
+
+
+
+
+
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true
+});
